@@ -2,28 +2,16 @@
 
 if keyboard_check(vk_left)
 {
-	if character = 0
-	{
-		sprite_index = sKirbyside
-	}
-	if character = 1
-	{
-		sprite_index = sPHc2
-	}
+	sprite_index = sprSide;
+	
 	image_xscale = -1
 	xspd -= 0.25
 }
 
 if keyboard_check(vk_right)
 {
-if character = 0
-	{
-		sprite_index = sKirbyside
-	}
-	if character = 1
-	{
-		sprite_index = sPHc2
-	}
+	sprite_index = sprSide;
+	
 	image_xscale = 1
 	xspd += 0.25
 }
@@ -31,27 +19,15 @@ if character = 0
 
 if keyboard_check(vk_up)
 {
-if character = 0
-	{
-		sprite_index = sKirbyup
-	}
-	if character = 1
-	{
-		sprite_index = sPHc2
-	}
+	sprite_index = sprUp;
+	
 	yspd -= 0.25
 }
 
 if keyboard_check(vk_down)
 {
-if character = 0
-	{
-		sprite_index = sKirbyside
-	}
-	if character = 1
-	{
-		sprite_index = sPHc2
-	}
+	sprite_index = sprDown;
+	
 	yspd += 0.25
 }
 
@@ -116,9 +92,11 @@ if keyboard_check_released(vk_space)
 }
 
 //placeholder character switching
-if keyboard_check(vk_backspace)
+if keyboard_check_pressed(vk_backspace)
 { 
-	character += 1
+	character = (character + 1 + characters.length) % characters.length;
+	
+	script_execute(characterInfo[character][characterInfoParams.spriteSetScript]);
 }
 
 

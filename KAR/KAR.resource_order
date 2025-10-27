@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"oCar","order":1,"path":"objects/oCar/oCar.yy",},
+    {"name":"scr_Player_SetSprites_PlaceholderChar2","order":1,"path":"scripts/scr_Player_SetSprites_PlaceholderChar2/scr_Player_SetSprites_PlaceholderChar2.yy",},
     {"name":"sKirbydown","order":2,"path":"sprites/sKirbydown/sKirbydown.yy",},
     {"name":"sKirbyup","order":5,"path":"sprites/sKirbyup/sKirbyup.yy",},
     {"name":"sPHc2","order":6,"path":"sprites/sPHc2/sPHc2.yy",},

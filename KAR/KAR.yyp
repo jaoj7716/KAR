@@ -38,6 +38,8 @@
     {"id":{"name":"oCar","path":"objects/oCar/oCar.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_Player_SetSprites_Kirby","path":"scripts/scr_Player_SetSprites_Kirby/scr_Player_SetSprites_Kirby.yy",},},
+    {"id":{"name":"scr_Player_SetSprites_PlaceholderChar2","path":"scripts/scr_Player_SetSprites_PlaceholderChar2/scr_Player_SetSprites_PlaceholderChar2.yy",},},
     {"id":{"name":"sKirbydown","path":"sprites/sKirbydown/sKirbydown.yy",},},
     {"id":{"name":"sKirbyside","path":"sprites/sKirbyside/sKirbyside.yy",},},
     {"id":{"name":"sKirbyup","path":"sprites/sKirbyup/sKirbyup.yy",},},
