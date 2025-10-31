@@ -2,14 +2,16 @@
 
 if keyboard_check(vk_left)
 {
-	sprite_index = sWSside
+	sprite_index = sWSside;
+	
 	image_xscale = -1
 	xspd -= 0.25
 }
 
 if keyboard_check(vk_right)
 {
-	sprite_index = sWSside
+	sprite_index = sWSside;
+	
 	image_xscale = 1
 	xspd += 0.25
 }
@@ -17,13 +19,15 @@ if keyboard_check(vk_right)
 
 if keyboard_check(vk_up)
 {
-	sprite_index = sWSup
+	sprite_index = sWSup;
+	
 	yspd -= 0.25
 }
 
 if keyboard_check(vk_down)
 {
-	sprite_index = sWSdown
+	sprite_index = sWSdown;
+	
 	yspd += 0.25
 }
 
@@ -57,31 +61,54 @@ if yspd < ncspd
 
 if keyboard_check(vk_space)
 {
-	xspd = 0
-	yspd = 0
+	suck = 1
+	
+	if keyboard_check(vk_left)
+	{
+	xspd += 0.20
+	}
+	
+	if keyboard_check(vk_right)
+	{
+	xspd -= 0.20
+	}
+	
+	if keyboard_check(vk_up)
+	{
+	yspd += 0.20
+	}
+	
+	if keyboard_check(vk_down)
+	{
+		yspd -= 0.20
+	}
 }
 
 if keyboard_check_released(vk_space)
 {
 	suck = 0
-	if keyboard_check(vk_left)
-	{
-		xspd -=	10
+	if keyboard_check(vk_left) 
+	{ 
+		xspd -=	7
 	}
 	
 	if keyboard_check(vk_right)
 	{
-		xspd += 10
+		xspd += 7
 	}
 	
-		if keyboard_check(vk_up)
+		if keyboard_check(vk_up) 
 	{
-		yspd -= 10
+		yspd -= 7
 	}
 	
-		if keyboard_check(vk_down)
+		if keyboard_check(vk_down) 
 	{
-		yspd += 10
+		yspd += 7
+		
 	}
+	
 	
 }
+
+

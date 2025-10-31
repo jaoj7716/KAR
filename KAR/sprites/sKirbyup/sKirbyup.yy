@@ -1,25 +1,25 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sKirbyup",
   "bboxMode":0,
-  "bbox_bottom":17,
+  "bbox_bottom":16,
   "bbox_left":1,
   "bbox_right":18,
-  "bbox_top":2,
+  "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8ef16ee2-36aa-41dd-9b69-ce2d6b18ab5a","name":"8ef16ee2-36aa-41dd-9b69-ce2d6b18ab5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c5822fc4-6c6a-4d41-ad46-e23791f605c4","name":"c5822fc4-6c6a-4d41-ad46-e23791f605c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":20,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2d4445b9-4803-4897-b562-03613532273b","blendMode":0,"displayName":"default","isLocked":false,"name":"2d4445b9-4803-4897-b562-03613532273b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b544b267-246b-4c0b-b3b6-c394613bf7fc","blendMode":0,"displayName":"default","isLocked":false,"name":"b544b267-246b-4c0b-b3b6-c394613bf7fc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sKirbyup",
   "nineSlice":null,
@@ -70,9 +70,7 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ef16ee2-36aa-41dd-9b69-ce2d6b18ab5a","path":"sprites/sKirbyup/sKirbyup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a3bed30b-a2bf-401a-902a-6402bde95ecd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c5822fc4-6c6a-4d41-ad46-e23791f605c4","path":"sprites/sKirbyup/sKirbyup.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3ccb7880-feb9-4e2f-afac-ecc590bbe214","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

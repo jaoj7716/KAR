@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"KAR",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -31,19 +31,22 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"KAR",
   "resources":[
     {"id":{"name":"oCar","path":"objects/oCar/oCar.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_Player_SetSprites_dedede","path":"scripts/scr_Player_SetSprites_dedede/scr_Player_SetSprites_dedede.yy",},},
     {"id":{"name":"scr_Player_SetSprites_Kirby","path":"scripts/scr_Player_SetSprites_Kirby/scr_Player_SetSprites_Kirby.yy",},},
-    {"id":{"name":"scr_Player_SetSprites_PlaceholderChar2","path":"scripts/scr_Player_SetSprites_PlaceholderChar2/scr_Player_SetSprites_PlaceholderChar2.yy",},},
     {"id":{"name":"sKirbydown","path":"sprites/sKirbydown/sKirbydown.yy",},},
     {"id":{"name":"sKirbyside","path":"sprites/sKirbyside/sKirbyside.yy",},},
     {"id":{"name":"sKirbyup","path":"sprites/sKirbyup/sKirbyup.yy",},},
     {"id":{"name":"sPHc2","path":"sprites/sPHc2/sPHc2.yy",},},
+    {"id":{"name":"stddown","path":"sprites/stddown/stddown.yy",},},
+    {"id":{"name":"stdside","path":"sprites/stdside/stdside.yy",},},
+    {"id":{"name":"stdup","path":"sprites/stdup/stdup.yy",},},
     {"id":{"name":"sWSdown","path":"sprites/sWSdown/sWSdown.yy",},},
     {"id":{"name":"sWSside","path":"sprites/sWSside/sWSside.yy",},},
     {"id":{"name":"sWSup","path":"sprites/sWSup/sWSup.yy",},},

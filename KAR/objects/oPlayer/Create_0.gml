@@ -3,13 +3,13 @@ yspd = 0
 cspd = 15
 ncspd = -15
 suck = 0
-character = characters.kirby
-ccap = 2
+character = characters.dedede
+dasht = 0
 
 enum characters
 {
 	kirby,
-	placeholderChar2,
+	dedede,
 	
 	length
 }
@@ -20,6 +20,6 @@ enum characterInfoParams
 }
 
 characterInfo[characters.kirby][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_Kirby;
-characterInfo[characters.placeholderChar2][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_PlaceholderChar2;
+characterInfo[characters.dedede][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_dedede;
 
 script_execute(characterInfo[character][characterInfoParams.spriteSetScript]);
