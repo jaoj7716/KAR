@@ -1,7 +1,7 @@
 if global.select = 1
 {
 	sprite_index = sMainselected
-	if keyboard_check(ord("z"))
+	if keyboard_check(ord("Z"))
 	{
 		room_goto_next()
 	}

@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
+    {"name":"group1","order":1,"path":"folders/Animation Curves/group1.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
@@ -27,6 +28,9 @@
   ],
   "ResourceOrderSettings":[
     {"name":"oAirracebutton","order":5,"path":"objects/oAirracebutton/oAirracebutton.yy",},
+    {"name":"obj_S_ATK","order":3,"path":"objects/obj_S_ATK/obj_S_ATK.yy",},
+    {"name":"obj_S_CSG","order":1,"path":"objects/obj_S_CSG/obj_S_CSG.yy",},
+    {"name":"obj_S_STR","order":2,"path":"objects/obj_S_STR/obj_S_STR.yy",},
     {"name":"oCar","order":1,"path":"objects/oCar/oCar.yy",},
     {"name":"oCredits","order":7,"path":"objects/oCredits/oCredits.yy",},
     {"name":"oline","order":2,"path":"objects/oline/oline.yy",},
@@ -40,6 +44,7 @@
     {"name":"scr_Player_SetSprites_Rick","order":6,"path":"scripts/scr_Player_SetSprites_Rick/scr_Player_SetSprites_Rick.yy",},
     {"name":"scr_Transition","order":5,"path":"scripts/scr_Transition/scr_Transition.yy",},
     {"name":"out","order":1,"path":"sequences/out/out.yy",},
+    {"name":"shd_GentleMadman","order":4,"path":"shaders/shd_GentleMadman/shd_GentleMadman.yy",},
     {"name":"finline","order":28,"path":"sprites/finline/finline.yy",},
     {"name":"iconF","order":1,"path":"sprites/iconF/iconF.yy",},
     {"name":"sC","order":22,"path":"sprites/sC/sC.yy",},
@@ -69,6 +74,10 @@
     {"name":"sMMbg","order":35,"path":"sprites/sMMbg/sMMbg.yy",},
     {"name":"sPHc2_1","order":29,"path":"sprites/sPHc2_1/sPHc2_1.yy",},
     {"name":"sPixel","order":33,"path":"sprites/sPixel/sPixel.yy",},
+    {"name":"spr_S_ATK1","order":5,"path":"sprites/spr_S_ATK1/spr_S_ATK1.yy",},
+    {"name":"spr_S_ATK2","order":6,"path":"sprites/spr_S_ATK2/spr_S_ATK2.yy",},
+    {"name":"spr_S_CSG","order":7,"path":"sprites/spr_S_CSG/spr_S_CSG.yy",},
+    {"name":"spr_S_STR","order":8,"path":"sprites/spr_S_STR/spr_S_STR.yy",},
     {"name":"sRickdiagonal","order":1,"path":"sprites/sRickdiagonal/sRickdiagonal.yy",},
     {"name":"sRickdiagonal2","order":2,"path":"sprites/sRickdiagonal2/sRickdiagonal2.yy",},
     {"name":"sRickdown","order":4,"path":"sprites/sRickdown/sRickdown.yy",},
