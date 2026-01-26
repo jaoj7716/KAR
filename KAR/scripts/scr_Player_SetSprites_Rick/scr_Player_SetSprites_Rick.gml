@@ -1,8 +1,8 @@
-function scr_Player_SetSprites_meta()
+function scr_Player_SetSprites_Rick()
 {
 	sprSide = sRickside;
-	sprUp = smkup;
-	sprDown = smkdown;
-	sprdiagonaldown = smkdiagonal1;
-	sprdiagonalup = smkdiagonal2;
+	sprUp = sRickup;
+	sprDown = sRickdown;
+	sprdiagonaldown = sRickdiagonal;
+	sprdiagonalup = sRickdiagonal2;
 }
