@@ -35,6 +35,9 @@
 =======
     {"name":"oCredits","order":1,"path":"objects/oCredits/oCredits.yy",},
     {"name":"oenterdebugroom","order":9,"path":"objects/oenterdebugroom/oenterdebugroom.yy",},
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {"name":"oline","order":2,"path":"objects/oline/oline.yy",},
     {"name":"opoint1","order":3,"path":"objects/opoint1/opoint1.yy",},
