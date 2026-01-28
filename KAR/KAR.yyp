@@ -61,11 +61,7 @@
     {"id":{"name":"opoint1","path":"objects/opoint1/opoint1.yy",},},
     {"id":{"name":"osettingsbutton","path":"objects/osettingsbutton/osettingsbutton.yy",},},
     {"id":{"name":"oStart","path":"objects/oStart/oStart.yy",},},
-<<<<<<< HEAD
     {"id":{"name":"debug","path":"rooms/debug/debug.yy",},},
-=======
-    {"id":{"name":"rGame","path":"rooms/rGame/rGame.yy",},},
->>>>>>> pr/3
     {"id":{"name":"rMainmenu","path":"rooms/rMainmenu/rMainmenu.yy",},},
     {"id":{"name":"rTitleScreen","path":"rooms/rTitleScreen/rTitleScreen.yy",},},
     {"id":{"name":"scr_MoveToward","path":"scripts/scr_MoveToward/scr_MoveToward.yy",},},
@@ -145,11 +141,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rTitleScreen","path":"rooms/rTitleScreen/rTitleScreen.yy",},},
     {"roomId":{"name":"rMainmenu","path":"rooms/rMainmenu/rMainmenu.yy",},},
-<<<<<<< HEAD
     {"roomId":{"name":"debug","path":"rooms/debug/debug.yy",},},
-=======
-    {"roomId":{"name":"rGame","path":"rooms/rGame/rGame.yy",},},
->>>>>>> pr/3
   ],
   "templateType":"game",
   "TextureGroups":[
