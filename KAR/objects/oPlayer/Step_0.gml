@@ -1,228 +1,26 @@
 //movement code
 
-if keyboard_check(vk_left)
-{
-	sprite_index = sprSide;
-	left = true
-	image_xscale = -1
-	xspd -= 0.10
-}
-
-if keyboard_check(vk_right)
-{
-	sprite_index = sprSide;
-	right = true
-	image_xscale = 1
-	xspd += 0.10
-}
-
-
-if keyboard_check(vk_up)
-{
-	image_xscale = 1
-	sprite_index = sprUp;
-	up = true
-	yspd -= 0.10
-}
-
-if keyboard_check(vk_down)
-{
-	image_xscale =1
-	sprite_index = sprDown;
-	down = true
-	yspd += 0.10
-}
-
-if keyboard_check(vk_up) && keyboard_check(vk_right)
-{
-	sprite_index = sprdiagonalup
-image_xscale = -1
-}
-
-if keyboard_check(vk_down) && keyboard_check(vk_left)
-{
-	sprite_index = sprdiagonaldown
-image_xscale = -1
-}
-if keyboard_check(vk_down) && keyboard_check(vk_right)
-{
-	sprite_index = sprdiagonaldown
-image_xscale = 1
-}
-
-if keyboard_check(vk_up) && keyboard_check(vk_left)
-{
-	sprite_index = sprdiagonalup
-image_xscale = 1
-}
-
-x += xspd
-y += yspd
-
-//slowdown if button released
-
-if keyboard_check_released(vk_right) && xspd < 0
-{
-right = false
-
-}
-
-if keyboard_check_released(vk_left) &&  xspd > 0
-{
-	left = false
-}
-
-if keyboard_check_released(vk_up) &&  yspd > 0
-{
-up = false
-
-}
-
-if keyboard_check_released(vk_down) && yspd < 0
-{
-	down = false
-
-}
-
-if keyboard_check_released(vk_right) && xspd > 3
-{
-xspd -= 2
-
-}
-
-if keyboard_check_released(vk_left) &&  xspd < -3
-{
-	xspd += 2
-
-}
-
-if keyboard_check_released(vk_up) &&  yspd < -3
-{
-	yspd += 2
-
-}
-
-if keyboard_check_released(vk_down) && yspd > 3
-{
-	yspd -= 2
-
-}
-
-//cap speeds
-
-if xspd > 5
-{
-	xspd -= 0.13
-}
-
-if yspd > 5
-{
-	yspd -= 0.13
-}
-
-if xspd < -5
-{
-	xspd += 0.13
-}
-
-if yspd < -5
-{
-	yspd += 0.13
-}
-
-
+//These two are exactly what they say on the tin
+var xInput = (keyboard_check(vk_right) - keyboard_check(vk_left))
+var yInput = (keyboard_check(vk_down) - keyboard_check(vk_up))
+//Another variable so that we can control the speed while also saving the current input
+var xSpeed = xInput
+var ySpeed = yInput
 
 //dash code
-
 if keyboard_check(vk_space)
 {
-	suck = 1
+	suck = 1 //no clue what this is
 	dasht += 0.5
-	if keyboard_check(vk_right)
-	{
-		xspd -= 0.14
-		if xspd < 0.0
-		{
-			xspd = 0.0
-		}
-	}
-	
-		if keyboard_check(vk_left)
-	{
-		xspd += 0.14
-		if xspd  > 0.0
-		{
-			xspd = -0.0
-		}
-
-	}
-	
-	if keyboard_check(vk_up)
-	{
-		yspd += 0.14
-	
-		if yspd  > 0.0
-		{
-			yspd = -0.0
-		}
-	}
-	if keyboard_check(vk_down)
-	{
-		yspd -= 0.14
-	
-		if yspd < 0.0
-		{
-			yspd = 0.0
-		}
-	}
-
+	xSpeed = 0
+	ySpeed = 0
 }
 
 if keyboard_check_released(vk_space) && dasht > 19
 {
-
-	if keyboard_check(vk_right)  
-	{
-		xspd += 4
-		dasht = 0
-		
-	}
-	else
-	{
-		dasht = 0
-	}
-		
-    
-	
-	if keyboard_check(vk_left) 
-	{
-		xspd -= 7
-		dasht = 0
-	}
-	else
-	{
-		dasht = 0
-	}
-	
-	if keyboard_check(vk_up) 
-	{
-		yspd -= 7
-		dasht = 0
-	}
-	else
-	{
-		dasht = 0
-	}
-	
-	if keyboard_check(vk_down) 
-	{
-		yspd += 7
-		dasht = 0
-	}
-	else
-	{
-		dasht = 0
-	}
+	xspd = xInput * dashSpeed
+	yspd = yInput * dashSpeed
+	dasht = 0
 }
 
 if dasht > 25
@@ -231,16 +29,63 @@ if dasht > 25
 }
 if keyboard_check_released(vk_space) && dasht < 29
 {
-		dasht = 0
+	dasht = 0
 }
 
+if (xInput != 0 or yInput != 0)
+{
+	var angle = (90*yInput) - ((45) * (xInput != 0 and yInput != 0)) //evil magic equation (it just works)
+	if (xInput != 0)
+	{
+		image_xscale = xInput
+	}
+	switch (angle)
+	{
+		case 0:
+		currentSprite = "Side"
+		break;
+		case 45:
+		currentSprite = "DiagonalDown"
+		break;
+		case 90:
+		currentSprite = "Down"
+		break;
+		case -135:
+		image_xscale = -xInput //cause SOMEONE made the player's diagonal up sprites face the wrong way
+		currentSprite = "DiagonalUp"
+		break;
+		case -90:
+		currentSprite = "Up"
+		break;
+	}
+}
 
+//cap speeds
+var xDelta = accelSpeed //amount that xspd will be changed by
+if (xSpeed == 0 or xSpeed != sign(xspd)) //if player isn't moving or is turning
+{
+	xDelta = decelSpeed
+}
+var yDelta = accelSpeed //likewise
+if (ySpeed == 0 or ySpeed != sign(yspd))
+{
+	yDelta = decelSpeed
+}
+//scr_MoveToward adds the third argument to the first, until it reaches the second (and doesnt go over/under)
+xspd = scr_MoveToward(xspd,topSpeed*xSpeed,xDelta) 
+yspd = scr_MoveToward(yspd,topSpeed*ySpeed,yDelta)
+
+//move
+x += xspd
+y += yspd
 
 //placeholder character switching
 if keyboard_check_pressed(vk_backspace)
 { 
 	character = (character + 1 + characters.length) % characters.length;
 	
-	script_execute(characterInfo[character][characterInfoParams.spriteSetScript]);
+	setupCharacter()
 }
 
+//Use the currentSprite variable as a key for the playerSprites struct
+sprite_index = playerSprites[$ currentSprite]

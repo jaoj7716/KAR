@@ -20,7 +20,6 @@
     {"name":"gooey sprites","order":1,"path":"folders/Sprites/character sprites/gooey sprites.yy",},
     {"name":"kirby sprites","order":2,"path":"folders/Sprites/character sprites/kirby sprites.yy",},
     {"name":"meta sprites","order":3,"path":"folders/Sprites/character sprites/meta sprites.yy",},
-    {"name":"Nago sprites","order":5,"path":"folders/Sprites/character sprites/Nago sprites.yy",},
     {"name":"Rick sprites","order":4,"path":"folders/Sprites/character sprites/Rick sprites.yy",},
     {"name":"copy icon","order":21,"path":"folders/Sprites/copy icon.yy",},
     {"name":"Enemy sprites","order":23,"path":"folders/Sprites/Enemy sprites.yy",},
@@ -34,37 +33,17 @@
     {"name":"o_GameManager","order":9,"path":"objects/o_GameManager/o_GameManager.yy",},
     {"name":"o_MainMenuManager","order":3,"path":"objects/o_MainMenuManager/o_MainMenuManager.yy",},
     {"name":"oCar","order":1,"path":"objects/oCar/oCar.yy",},
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    {"name":"oCredits","order":7,"path":"objects/oCredits/oCredits.yy",},
-=======
     {"name":"oCredits","order":1,"path":"objects/oCredits/oCredits.yy",},
-    {"name":"oenterdebugroom","order":9,"path":"objects/oenterdebugroom/oenterdebugroom.yy",},
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-    {"name":"oCredits","order":1,"path":"objects/oCredits/oCredits.yy",},
->>>>>>> pr/3
     {"name":"oline","order":2,"path":"objects/oline/oline.yy",},
     {"name":"opoint1","order":3,"path":"objects/opoint1/opoint1.yy",},
     {"name":"osettingsbutton","order":2,"path":"objects/osettingsbutton/osettingsbutton.yy",},
     {"name":"oStart","order":4,"path":"objects/oStart/oStart.yy",},
-<<<<<<< HEAD
-    {"name":"debug","order":2,"path":"rooms/debug/debug.yy",},
-=======
     {"name":"rGame","order":2,"path":"rooms/rGame/rGame.yy",},
->>>>>>> pr/3
     {"name":"rMainmenu","order":1,"path":"rooms/rMainmenu/rMainmenu.yy",},
     {"name":"scr_MoveToward","order":1,"path":"scripts/scr_MoveToward/scr_MoveToward.yy",},
     {"name":"scr_Player_SetSprites_dedede","order":1,"path":"scripts/scr_Player_SetSprites_dedede/scr_Player_SetSprites_dedede.yy",},
     {"name":"scr_Player_SetSprites_Gooey","order":3,"path":"scripts/scr_Player_SetSprites_Gooey/scr_Player_SetSprites_Gooey.yy",},
     {"name":"scr_Player_SetSprites_meta","order":2,"path":"scripts/scr_Player_SetSprites_meta/scr_Player_SetSprites_meta.yy",},
-    {"name":"scr_Player_SetSprites_Nago","order":8,"path":"scripts/scr_Player_SetSprites_Nago/scr_Player_SetSprites_Nago.yy",},
     {"name":"scr_Player_SetSprites_Rick","order":6,"path":"scripts/scr_Player_SetSprites_Rick/scr_Player_SetSprites_Rick.yy",},
     {"name":"scr_Transition","order":5,"path":"scripts/scr_Transition/scr_Transition.yy",},
     {"name":"out","order":1,"path":"sequences/out/out.yy",},
@@ -95,10 +74,6 @@
     {"name":"smkside","order":1,"path":"sprites/smkside/smkside.yy",},
     {"name":"smkup","order":2,"path":"sprites/smkup/smkup.yy",},
     {"name":"sMMbg","order":35,"path":"sprites/sMMbg/sMMbg.yy",},
-    {"name":"sNdiagonal","order":1,"path":"sprites/sNdiagonal/sNdiagonal.yy",},
-    {"name":"sNdiagonal2","order":3,"path":"sprites/sNdiagonal2/sNdiagonal2.yy",},
-    {"name":"sNdown","order":2,"path":"sprites/sNdown/sNdown.yy",},
-    {"name":"sNup","order":4,"path":"sprites/sNup/sNup.yy",},
     {"name":"sPHc2_1","order":29,"path":"sprites/sPHc2_1/sPHc2_1.yy",},
     {"name":"sPixel","order":33,"path":"sprites/sPixel/sPixel.yy",},
     {"name":"sRickdiagonal","order":1,"path":"sprites/sRickdiagonal/sRickdiagonal.yy",},
