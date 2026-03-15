@@ -1,7 +1,9 @@
 draw_text(59, 60, "x speed " + string(xspd))
 draw_text(59, 117, "y speed " + string(yspd))
-draw_text(59, 210, "character? " + string(character))
+draw_text(59, 210, "character? " + string(global.character))
 draw_text(59, 230, "lap " + string(global.Lap))
+draw_text(59, 280, string(global.checkpoint))
+draw_text(59, 280, string(global.checkpoint2))
 
 
 

@@ -4,15 +4,15 @@ up = false
 down = false
 left = false
 right = false
-character = characters.kirby
 dasht = 0
 global.Lap = 0
-checkpoint1 = 0
+checkpoint1 = false
 
 accelSpeed = 0.13
 decelSpeed = 0.07 
 topSpeed = 5
-dashSpeed = 7
+dashSpeed = 8.5
+
 
 
 enum characters
@@ -22,6 +22,7 @@ enum characters
 	metaknight,
 	gooey,
 	rick,
+	coo,
 	
 	length
 }
@@ -36,6 +37,7 @@ characterInfo[characters.dedede][characterInfoParams.spriteSetScript] = scr_Play
 characterInfo[characters.metaknight][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_meta;
 characterInfo[characters.gooey][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_gooey;
 characterInfo[characters.rick][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_Rick;
+characterInfo[characters.coo][characterInfoParams.spriteSetScript] = scr_Player_SetSprites_coo;
 
 setupCharacter()
 
@@ -51,5 +53,5 @@ currentSprite = "Side" //Player sprites are now string IDs
 
 function setupCharacter()
 {
-	playerSprites = script_execute(characterInfo[character][characterInfoParams.spriteSetScript]);
+	playerSprites = script_execute(characterInfo[global.character][characterInfoParams.spriteSetScript]);
 }

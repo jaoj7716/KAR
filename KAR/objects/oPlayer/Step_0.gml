@@ -10,7 +10,7 @@ var ySpeed = yInput
 //dash code
 if keyboard_check(vk_space)
 {
-	suck = 1 //no clue what this is
+	suck = 1 //something incredible
 	dasht += 0.5
 	xSpeed = 0
 	ySpeed = 0
@@ -71,6 +71,7 @@ if (ySpeed == 0 or ySpeed != sign(yspd))
 {
 	yDelta = decelSpeed
 }
+
 //scr_MoveToward adds the third argument to the first, until it reaches the second (and doesnt go over/under)
 xspd = scr_MoveToward(xspd,topSpeed*xSpeed,xDelta) 
 yspd = scr_MoveToward(yspd,topSpeed*ySpeed,yDelta)
@@ -82,10 +83,12 @@ y += yspd
 //placeholder character switching
 if keyboard_check_pressed(vk_backspace)
 { 
-	character = (character + 1 + characters.length) % characters.length;
+	global.character = (global.character + 1 + characters.length) % characters.length;
 	
 	setupCharacter()
 }
 
 //Use the currentSprite variable as a key for the playerSprites struct
 sprite_index = playerSprites[$ currentSprite]
+
+	

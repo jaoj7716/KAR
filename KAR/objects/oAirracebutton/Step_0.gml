@@ -1,9 +1,9 @@
 if (selected == true)
 {
 	sprite_index = sMainselected
-	if keyboard_check(ord("Z"))
+	if keyboard_check_pressed(ord("Z"))
 	{
-		room_goto(rGame)
+		room_goto(rCharactermenu)
 	}
 }
 else

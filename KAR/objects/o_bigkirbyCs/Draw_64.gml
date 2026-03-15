@@ -1,0 +1,1 @@
+draw_text(59, 59, string(time))

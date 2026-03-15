@@ -1,4 +1,4 @@
-if keyboard_check(vk_anykey)
+if keyboard_check_pressed(vk_anykey)
 {
 	room_goto(rMainmenu)
 }

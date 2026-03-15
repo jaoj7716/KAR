@@ -1,4 +1,4 @@
-if (room == rGame)
+if (room == rDebug)
 {
-	inRace = true
+	global.inRace = true
 }
