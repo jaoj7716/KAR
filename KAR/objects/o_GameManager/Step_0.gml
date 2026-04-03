@@ -13,3 +13,15 @@ if global.inRace == false
 	oPlayer.yspd = 0
 
 }
+
+if global.Lap = 5
+{
+  global.raceend = true
+  global.inRace = false
+}
+
+if global.raceend && global.inRace= false
+{
+	room_goto(rMainmenu)
+}
+
