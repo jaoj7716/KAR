@@ -9,7 +9,7 @@ global.Lap = 0
 checkpoint1 = false
 
 accelSpeed = 0.13
-decelSpeed = 0.07 
+decelSpeed = 0.1
 topSpeed = 5
 dashSpeed = 8.5
 

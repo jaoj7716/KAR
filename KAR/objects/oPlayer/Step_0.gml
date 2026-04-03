@@ -91,4 +91,7 @@ if keyboard_check_pressed(vk_backspace)
 //Use the currentSprite variable as a key for the playerSprites struct
 sprite_index = playerSprites[$ currentSprite]
 
-	
+if place_empty(x, y, oline) && global.Lap = 5 
+{
+global.inRace = false
+}

@@ -4,6 +4,8 @@ if (selected == true)
 	if keyboard_check_pressed(ord("Z"))
 	{
 		room_goto(rCharactermenu)
+		var target = rCharactermenu
+	TransitionStart(target,out, in)
 	}
 }
 else
